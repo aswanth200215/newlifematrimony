@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 
 import Login from "./pages/login";
 import Form from "./pages/Form";
-import display from "./pages/display";
+import Display from "./pages/Display";
 
 class App extends Component{
     render(){
@@ -14,7 +14,11 @@ class App extends Component{
                <Routes>
                     <Route path= '/' element={<Login />} />
                     <Route path="Form" element = {<Form />} />
-                    <Route path="display" element ={<display />} />
+                    <Route path="Reset" element = {<Reset />} />
+                    <Route path="display" element ={<Display />} />
+                    <Route path="Verify" element ={<Verify />} />
+                    <Route path="Homepage" element ={<Homepage />} />
+                    <Route path="Homepage" element ={<Homepage />} />
                 </Routes>
                </BrowserRouter>
                 

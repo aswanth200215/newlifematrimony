@@ -1,6 +1,6 @@
 import React from 'react'
 import "./display.css"
-export default function display  ()  {
+export default function Display  ()  {
   render (
     <div className='main'>
         <div>1</div>
