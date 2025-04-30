@@ -4,21 +4,23 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 
 import Login from "./pages/login";
 import Form from "./pages/Form";
-import Display from "./pages/Display";
+import Verify from "./pages/Verify";
+import Reset from "./pages/Reset";
+import Admin from "./pages/Admin";
+import { Home } from "./pages/Home";
 
 class App extends Component{
     render(){
-        return( 
+        return(
             <div className="App">
                <BrowserRouter>
-               <Routes>
+                <Routes>
                     <Route path= '/' element={<Login />} />
-                    <Route path="Form" element = {<Form />} />
-                    <Route path="Reset" element = {<Reset />} />
-                    <Route path="display" element ={<Display />} />
-                    <Route path="Verify" element ={<Verify />} />
-                    <Route path="Homepage" element ={<Homepage />} />
-                    <Route path="Homepage" element ={<Homepage />} />
+                    <Route path="Form" element={<Form />} />
+                    <Route path="Verify" element={<Verify />} />
+                    <Route path="Reset" element={<Reset />} />
+                    <Route path="Admin" element={<Admin />} />
+                    <Route path="Home" element={<Home />} />
                 </Routes>
                </BrowserRouter>
                 
