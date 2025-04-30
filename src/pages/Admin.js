@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./login.css"
 import { useNavigate } from "react-router-dom";
-export default function Login(){
+export default function Admin(){
     const intitalStateErrors = {
         email:{required:false},
         password:{required:false},
@@ -49,8 +49,8 @@ export default function Login(){
             <div className="container">
                <div className="row ">
                     <div className="col register-sec">
-                     <h2 className="text-center">Welcome To New Life Matrimony</h2>
-                     <h3 className="text-center">Login To Continue</h3>
+                     <h2 className="text-center">New Life Matrimony</h2>
+                     <h3 className="text-center"> Admin Login</h3>
                      <form onSubmit={handleSubmit} className="register-form" action="" >
                       
                       <div className="form-group">
@@ -78,7 +78,7 @@ export default function Login(){
                      <div className="form-group">
                         
                         <span className="text-danger" >
-                        {errors.custom_error?Login
+                        {errors.custom_error?Admin
                            (<p>Custom Error Message!</p>)
                         :null
                         }
@@ -92,16 +92,8 @@ export default function Login(){
                         }
                         <input type="submit" className="btn btn-login float-right"  value="Login"/>
                      </div>
-                     <div className="clearfix"></div>
-                     <div className="form-group">
-                       <line>To Create New Profile </line><a href="#" onClick={() => navigate('/Form')}>Click here</a>
-                     </div>
-                     <div >
-                        <button className="btn btn-login" onClick={() => navigate('/Admin')}>Admin Login</button>
-                     </div>
-                     <div >
-                        <button className='btn btn-login' onClick={() => navigate('/Verify')}>Forgot Password</button>
-                     </div>
+                    
+                     
           
           
                      </form>

@@ -7,17 +7,25 @@ const Verify = () => {
 
   const navigate = useNavigate();
   return (
-    <section className='register-block'>
+    <section >
         <div>
             <form className='container'>
+            <h1 className='header'>Verify Its You</h1>
+              <div>
+                <label htmlFor="name" className='register'>Email id</label>
+                <input type="text" name="name" id='name' />
+                <button className='btn-next' type='submit' >Send OTP</button>
+              </div>
+              <div>
+                <label htmlFor="otp" className='register'> OTP</label>
+                <input type="text" name="otp" id='otp' />
+                <button className='btn-next' type='submit' onClick={() => navigate('/Reset')}>Next</button>
+              </div>
+            
+            
+            
 
-            <label htmlFor="name" className='register-sec'>Email id</label>
-            <input type="text" name="name" id='name' />
-            <button className='btn-next float-center' type='submit' >Send OTP</button>
-            <label htmlFor="otp" className='register-sec '> OTP</label>
-            <input type="number" name="otp" id='otp' />
-
-            <button className='btn-next' type='submit' onClick={() => navigate('/Reset')}>Next</button>
+            
             </form>
         </div>
     </section>

@@ -1,6 +1,8 @@
 
-.register-block{align-content: center;width:100%;padding : 250px 0; }
-.btn-{background: #113a86; color:#ffffff; font-weight:600; border-radius: 5px;}
+.register-block{align-content: center;width:50%;padding : 50px 0; }
+
 .container{background:#D3D3D3; border-radius: 10px; width: 40%; height: 40%;}
-.register-sec{padding: 50px 30px; position:relative;}
-.btn-next{background: #497ddf; color:#ffffff; font-weight:600; border-radius: 5px;}
+
+.btn-next{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: rgb(246, 150, 255);padding: 1.5 px 0;}
+.header{padding: 10px 70px ;color: black; font-family: 'Segoe UI',  sans-serif;}
+.register{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; align-items: center;}
